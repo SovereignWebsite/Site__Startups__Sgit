@@ -455,6 +455,12 @@
    "title": "sgit.ai, about",
    "url": "https://sgit.ai/about/index.html",
    "accessed": "2026-11-20"
+  },
+  {
+   "id": 15,
+   "title": "sgit.ai, quickstart",
+   "url": "https://sgit.ai/docs/quickstart.html",
+   "accessed": "2026-11-20"
   }
  ],
  "identity": {
@@ -465,37 +471,58 @@
    {
     "file": "img/real/home.webp",
     "url": "https://sgit.ai/",
-    "caption": "The sgit.ai home page: a vault is a unit of work"
+    "caption": "The sgit.ai home page: a vault is a unit of work",
+    "phone": "img/real/home-phone.webp",
+    "phone_w": 800,
+    "phone_h": 440
    },
    {
     "file": "img/real/vaults.webp",
     "url": "https://sgit.ai/demos/vaults/index.html",
-    "caption": "The catalogue of published vaults on sgit.ai"
+    "caption": "The catalogue of published vaults on sgit.ai",
+    "phone": "img/real/vaults-phone.webp",
+    "phone_w": 760,
+    "phone_h": 460
    },
    {
     "file": "img/real/why.webp",
     "url": "https://sgit.ai/why/index.html",
-    "caption": "Why does this exist? sgit.ai's own boundary map"
+    "caption": "Why does this exist? sgit.ai's own boundary map",
+    "phone": "img/real/why-phone.webp",
+    "phone_w": 760,
+    "phone_h": 460
    },
    {
     "file": "img/real/v-reference.webp",
     "url": "https://sgit.ai/demos/vaults/aiuc-1-conformance/index.html",
-    "caption": "Reference: the AIUC-1 conformance layer vault on sgit.ai"
+    "caption": "Reference: the AIUC-1 conformance layer vault on sgit.ai",
+    "phone": "img/real/v-reference-phone.webp",
+    "phone_w": 760,
+    "phone_h": 460
    },
    {
     "file": "img/real/v-application.webp",
     "url": "https://sgit.ai/demos/vaults/agent-permission-games/index.html",
-    "caption": "Application: the agent permission games vault on sgit.ai"
+    "caption": "Application: the agent permission games vault on sgit.ai",
+    "phone": "img/real/v-application-phone.webp",
+    "phone_w": 760,
+    "phone_h": 460
    },
    {
     "file": "img/real/v-presentation.webp",
     "url": "https://sgit.ai/demos/vaults/blackhat-eu-2025/index.html",
-    "caption": "Presentation: AI vs. AI, Black Hat EU 2025, as a vault on sgit.ai"
+    "caption": "Presentation: AI vs. AI, Black Hat EU 2025, as a vault on sgit.ai",
+    "phone": "img/real/v-presentation-phone.webp",
+    "phone_w": 760,
+    "phone_h": 460
    },
    {
     "file": "img/real/v-report.webp",
     "url": "https://sgit.ai/demos/vaults/pentest-report/index.html",
-    "caption": "Report: a penetration test report (fictional) as a vault on sgit.ai"
+    "caption": "Report: a penetration test report (fictional) as a vault on sgit.ai",
+    "phone": "img/real/v-report-phone.webp",
+    "phone_w": 760,
+    "phone_h": 460
    }
   ]
  },
@@ -701,7 +728,7 @@
      1
     ],
     "sub": "\"Each opens with a read key printed on its page, no account, nothing to install, and the server that stores it cannot read it.\" Reference, application, presentation and report, from sgit.ai's home page.",
-    "hero": "strip",
+    "hero": "vaultcards",
     "strip": [
      3,
      4
@@ -712,7 +739,33 @@
      5,
      6
     ],
-    "strip_title": "The four vaults, on sgit.ai"
+    "strip_title": "The four vaults, on sgit.ai",
+    "vaults": [
+     {
+      "cat": "Reference",
+      "title": "AIUC-1 conformance layer",
+      "line": "The AIUC-1 standard as a graph, plus a conformance layer that computes insurability",
+      "url": "https://sgit.ai/demos/vaults/aiuc-1-conformance/index.html"
+     },
+     {
+      "cat": "Application",
+      "title": "Agent permission games",
+      "line": "Two games about grants and mandates, the first vault here that phones home",
+      "url": "https://sgit.ai/demos/vaults/agent-permission-games/index.html"
+     },
+     {
+      "cat": "Presentation",
+      "title": "AI vs. AI, Black Hat EU 2025",
+      "line": "The Black Hat EU 2025 keynote, with its PDF exports and eight research papers",
+      "url": "https://sgit.ai/demos/vaults/blackhat-eu-2025/index.html"
+     },
+     {
+      "cat": "Report",
+      "title": "Penetration Test Report",
+      "line": "A penetration test report (fictional) with a re-test script per finding",
+      "url": "https://sgit.ai/demos/vaults/pentest-report/index.html"
+     }
+    ]
    }
   },
   {
@@ -721,5 +774,49 @@
    "blurb": "A newsroom feature, printable on A4",
    "engine": "newsroom"
   }
- ]
+ ],
+ "oneline": {
+  "t": "Git for encrypted vaults, for humans and AI agents",
+  "s": [
+   1
+  ]
+ },
+ "band": {
+  "title": "Plaintext here. Ciphertext there.",
+  "cols": [
+   {
+    "k": "On your machine",
+    "t": "Plaintext: your files, their names and your commit messages. Every object is encrypted here, with AES-256-GCM, before it is uploaded.",
+    "s": [
+     2
+    ]
+   },
+   {
+    "k": "On the server",
+    "t": "Ciphertext only, under opaque IDs. It can see sizes and timing, never names or contents.",
+    "s": [
+     7
+    ]
+   },
+   {
+    "k": "With the read key",
+    "t": "A reader opens the vault with one string: no account, no hosting, nothing to install.",
+    "s": [
+     1
+    ]
+   }
+  ],
+  "code": {
+   "lines": [
+    "$ pip install sgit-ai",
+    "$ sgit create my-vault",
+    "$ sgit commit -m \"add the plan\"",
+    "$ sgit push"
+   ],
+   "caption": "Four lines from sgit.ai's own 5-minute quickstart.",
+   "s": [
+    15
+   ]
+  }
+ }
 }

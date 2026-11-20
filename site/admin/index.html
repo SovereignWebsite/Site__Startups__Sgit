@@ -103,6 +103,10 @@ sup.cites a:hover{text-decoration:underline}
 
 .top .family-credit{position:relative;top:auto;right:auto;font-size:.8rem;margin-left:auto}
 .top .family-credit ul{min-width:14rem}
+.top .family-credit summary{font-size:1.3rem;line-height:1;padding:.2rem .5rem;opacity:.85}
+.top .family-credit summary::after{content:none}
+.family-credit .family-head{padding:.3rem .8rem .2rem;font-weight:700;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--fam-fg)}
+.top .wm-sw .ag{display:none}
 .top .family-credit ul{display:block;right:0}
 .top .family-credit li a{color:var(--fam-fg);display:block;padding:.3rem .8rem;text-decoration:none}
 .top .family-credit li a:hover{text-decoration:none;color:var(--fam-strong)}
@@ -146,8 +150,8 @@ pre,blockquote{background:var(--card);border:1px solid var(--line);border-radius
 <body class="d-admin">
 <a class="skip" href="#main">Skip to content</a>
 <header class="top"><nav class="top-row" aria-label="sgit"><a class="brand" href="../index.html"><span class="logo" role="img" aria-label="sgit.ai"><span class="wm-sgit">sgit<b>.ai</b></span></span><small>Git for encrypted vaults</small></a><ul><li><a href="/start/">Start here</a></li><li><a href="/agents/">Use with your AI</a></li><li><a href="/">Home</a></li><li><a class="visit" href="https://sgit.ai/">Visit sgit.ai &#8599;</a></li></ul><details class="pick"><summary>Choose a design</summary><div class="pick-cards"><p class="sr">The same facts in five designs.</p><ul><li><a href="../index.html"><img src="../img/designs/sgit-ai.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>Identity: sgit.ai</strong><span>In sgit.ai&#x27;s own look, with its live home page</span></a></li><li><a href="../designs/terminal.html"><img src="../img/designs/terminal.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Terminal</strong><span>A terminal session, and what the server sees</span></a></li><li><a href="../designs/vault.html"><img src="../img/designs/vault.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Vault</strong><span>Sealed blocks that open as you read</span></a></li><li><a href="../designs/vaults.html"><img src="../img/designs/vaults.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>Identity: the four vaults</strong><span>sgit.ai&#x27;s own strip of example vaults</span></a></li><li><a href="../designs/newsroom.html"><img src="../img/designs/newsroom.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Newsroom</strong><span>A newsroom feature, printable on A4</span></a></li></ul><p class="all"><a href="../designs/index.html">All designs</a> &middot; the home page uses Identity: sgit.ai.</p></div></details><details class="family-credit">
-  <summary>Sovereign Website</summary>
-  <ul>
+  <summary aria-label="Made with Sovereign Website: menu">&#8942;</summary>
+  <ul><li class="family-head">Made with Sovereign Website</li>
     <li><a href="/start/">Start here</a></li>
     <li><a href="/agents/">Use with your AI</a></li>
     <li class="family-gap"><a href="/admin/">How this site was made</a></li>

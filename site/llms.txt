@@ -50,3 +50,4 @@ An independent brochure about sgit, made from its own public pages. Official sit
 - sgit.ai, updates: https://sgit.ai/updates/index.html (read 2026-11-20)
 - PyPI, sgit-ai release history: https://pypi.org/project/sgit-ai/#history (read 2026-11-20)
 - sgit.ai, about: https://sgit.ai/about/index.html (read 2026-11-20)
+- sgit.ai, quickstart: https://sgit.ai/docs/quickstart.html (read 2026-11-20)

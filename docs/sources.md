@@ -18,6 +18,7 @@ Every fact on this site comes from these public pages. This file is written by t
 | 12 | [sgit.ai, updates](https://sgit.ai/updates/index.html) | 2026-11-20 |
 | 13 | [PyPI, sgit-ai release history](https://pypi.org/project/sgit-ai/#history) | 2026-11-20 |
 | 14 | [sgit.ai, about](https://sgit.ai/about/index.html) | 2026-11-20 |
+| 15 | [sgit.ai, quickstart](https://sgit.ai/docs/quickstart.html) | 2026-11-20 |
 
 ## Images
 
