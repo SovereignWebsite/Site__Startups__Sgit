@@ -8,7 +8,7 @@
  "url_label": "sgit.ai",
  "repo": "https://github.com/SovereignWebsite/Site__Startups__Sgit",
  "updated": "2026-11-20",
- "home": "terminal",
+ "home": "sgit-ai",
  "description": "An independent brochure about sgit, git for encrypted vaults, for humans and AI agents, made from its own public pages.",
  "headline": "Version control for files the server must never read",
  "lede": "sgit lets people and AI agents clone, commit, branch and merge folders of files that are encrypted on their own machine before upload. The server holds only ciphertext, and a one-way read key lets anyone open a vault without an account.",
@@ -512,6 +512,58 @@
  ],
  "designs": [
   {
+   "key": "sgit-ai",
+   "name": "Identity: sgit.ai",
+   "blurb": "In sgit.ai's own look, with its live home page",
+   "engine": "identity",
+   "cfg": {
+    "palette": {
+     "light": {
+      "bg": "#faf9f5",
+      "card": "#ffffff",
+      "fg": "#1c1d21",
+      "muted": "#5c5f66",
+      "line": "#e5e1d5",
+      "link": "#0f766e",
+      "acc": "#0f766e",
+      "acc-ink": "#fff",
+      "herobg": "#f2f0e9",
+      "heroink": "#101114",
+      "heroacc": "#0f766e",
+      "heroacc-ink": "#fff"
+     },
+     "dark": {
+      "bg": "#0f1412",
+      "card": "#161d1b",
+      "fg": "#e8efec",
+      "muted": "#a6b4af",
+      "line": "#26332f",
+      "link": "#5eead4",
+      "acc": "#5eead4",
+      "acc-ink": "#04201c",
+      "herobg": "#0b1513",
+      "heroink": "#e8efec",
+      "heroacc": "#5eead4",
+      "heroacc-ink": "#04201c"
+     }
+    },
+    "h1_font": "700 clamp(2.2rem,5.6vw,3.8rem)/1.1 ui-serif,Georgia,\"Times New Roman\",serif",
+    "h2_font": "700 clamp(1.4rem,3vw,2rem)/1.2 ui-serif,Georgia,serif",
+    "h1": "A vault is a unit of work: data, app, history and sources, shipped as one string",
+    "h1_s": [
+     1
+    ],
+    "sub": "\"Version it like git. Hand it over with a single read key, no account, no hosting, no install for the reader. And the server that stores it cannot read it.\"",
+    "hero": "shot",
+    "shot": 0,
+    "strip_below": [
+     1,
+     2
+    ],
+    "strip_title": "More of sgit.ai"
+   }
+  },
+  {
    "key": "terminal",
    "name": "The Terminal",
    "blurb": "A terminal session, and what the server sees",
@@ -604,58 +656,6 @@
     "h1": "This page is <b>sealed</b>.",
     "sub": "Each block below starts as ciphertext and opens as it reaches you, the way a vault opens with its read key. Under reduced motion it is plain text from the start.",
     "key": "Open it with the read key"
-   }
-  },
-  {
-   "key": "sgit-ai",
-   "name": "Identity: sgit.ai",
-   "blurb": "In sgit.ai's own look, with its live home page",
-   "engine": "identity",
-   "cfg": {
-    "palette": {
-     "light": {
-      "bg": "#faf9f5",
-      "card": "#ffffff",
-      "fg": "#1c1d21",
-      "muted": "#5c5f66",
-      "line": "#e5e1d5",
-      "link": "#0f766e",
-      "acc": "#0f766e",
-      "acc-ink": "#fff",
-      "herobg": "#f2f0e9",
-      "heroink": "#101114",
-      "heroacc": "#0f766e",
-      "heroacc-ink": "#fff"
-     },
-     "dark": {
-      "bg": "#0f1412",
-      "card": "#161d1b",
-      "fg": "#e8efec",
-      "muted": "#a6b4af",
-      "line": "#26332f",
-      "link": "#5eead4",
-      "acc": "#5eead4",
-      "acc-ink": "#04201c",
-      "herobg": "#0b1513",
-      "heroink": "#e8efec",
-      "heroacc": "#5eead4",
-      "heroacc-ink": "#04201c"
-     }
-    },
-    "h1_font": "700 clamp(2.2rem,5.6vw,3.8rem)/1.1 ui-serif,Georgia,\"Times New Roman\",serif",
-    "h2_font": "700 clamp(1.4rem,3vw,2rem)/1.2 ui-serif,Georgia,serif",
-    "h1": "A vault is a unit of work: data, app, history and sources, shipped as one string",
-    "h1_s": [
-     1
-    ],
-    "sub": "\"Version it like git. Hand it over with a single read key, no account, no hosting, no install for the reader. And the server that stores it cannot read it.\"",
-    "hero": "shot",
-    "shot": 0,
-    "strip_below": [
-     1,
-     2
-    ],
-    "strip_title": "More of sgit.ai"
    }
   },
   {

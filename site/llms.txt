@@ -28,9 +28,9 @@ An independent brochure about sgit, made from its own public pages. Official sit
 
 ## Pages
 
-- [The Terminal](https://sgit.startups.sovereignweb.site/index.html): A terminal session, and what the server sees
+- [Identity: sgit.ai](https://sgit.startups.sovereignweb.site/index.html): In sgit.ai's own look, with its live home page
+- [The Terminal](https://sgit.startups.sovereignweb.site/designs/terminal.html): A terminal session, and what the server sees
 - [The Vault](https://sgit.startups.sovereignweb.site/designs/vault.html): Sealed blocks that open as you read
-- [Identity: sgit.ai](https://sgit.startups.sovereignweb.site/designs/sgit-ai.html): In sgit.ai's own look, with its live home page
 - [Identity: the four vaults](https://sgit.startups.sovereignweb.site/designs/vaults.html): sgit.ai's own strip of example vaults
 - [The Newsroom](https://sgit.startups.sovereignweb.site/designs/newsroom.html): A newsroom feature, printable on A4
 
