@@ -21,4 +21,4 @@ Every fact on this site comes from these public pages. This file is written by t
 
 ## Images
 
-No images from the company are used. Every diagram and the favicon were drawn for this site from the facts above.
+Used with Dinis Cruz's agreement (20 November 2026, relayed by sites.b): these are his own companies, so their published brand assets may be used. Logo: from https://sgit.ai/. Screenshots of the company's live site, taken by startups.b with Playwright on 20 November 2026 and linked to the page each shows: https://sgit.ai/; https://sgit.ai/demos/vaults/index.html; https://sgit.ai/why/index.html. Every diagram, the favicon and the share card were drawn for this site.
