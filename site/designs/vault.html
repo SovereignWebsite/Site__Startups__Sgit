@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sgit: The Vault</title>
+<meta name="description" content="An independent brochure about sgit, git for encrypted vaults, for humans and AI agents, made from its own public pages.">
+<link rel="canonical" href="https://sgit.startups.sovereignweb.site/designs/vault.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="sgit, a startup brochure">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://sgit.startups.sovereignweb.site/designs/vault.html">
+<meta property="og:title" content="sgit: The Vault">
+<meta property="og:description" content="An independent brochure about sgit, git for encrypted vaults, for humans and AI agents, made from its own public pages.">
+<meta property="og:image" content="https://sgit.startups.sovereignweb.site/img/share-card.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="sgit: Git for encrypted vaults. An independent startup brochure made from its own public pages, pointing to sgit.ai.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="sgit: The Vault">
+<meta name="twitter:description" content="An independent brochure about sgit, git for encrypted vaults, for humans and AI agents, made from its own public pages.">
+<meta name="twitter:image" content="https://sgit.startups.sovereignweb.site/img/share-card.jpg">
+<meta name="twitter:image:alt" content="sgit: Git for encrypted vaults. An independent startup brochure made from its own public pages, pointing to sgit.ai.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);overflow-wrap:break-word}
+img,svg{max-width:100%;height:auto;display:block}
+figure{margin:0}
+a{color:var(--link)}
+:focus-visible{outline:3px solid var(--link);outline-offset:2px}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:1rem;top:1rem;background:var(--bg);color:var(--fg);padding:.5rem .8rem;z-index:9}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+sup.cites{font-size:.68em;line-height:0;margin-left:.35em;white-space:nowrap}
+sup.cites a{text-decoration:none;padding:0 .12em}
+sup.cites a:hover{text-decoration:underline}
+/* top navigation: the site's own */
+.top{background:var(--navbg,var(--bg));color:var(--navfg,var(--fg));border-bottom:1px solid var(--line);font:500 .95rem/1.4 var(--navfont,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif)}
+.top a{color:inherit}
+.top-row{max-width:76rem;margin:0 auto;padding:.55rem 1rem;display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1.1rem}
+.top .brand{text-decoration:none;font-weight:700;font-size:1.05rem;display:flex;flex-direction:column;line-height:1.15;margin-right:auto}
+.top .brand small{font-weight:400;font-size:.78rem;opacity:.85}
+.top ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.2rem 1rem}
+.top li a{text-decoration:none;display:inline-block;padding:.25rem 0;min-height:24px}
+.top li a:hover{text-decoration:underline}
+.top .visit{font-weight:700}
+.pick{position:relative}
+.pick summary{cursor:pointer;list-style:none;border:1px solid currentColor;border-radius:999px;padding:.25rem .8rem;white-space:nowrap}
+.pick summary::-webkit-details-marker{display:none}
+.pick summary::after{content:" \25BE"}
+.pick[open] summary::after{content:" \25B4"}
+.pick-cards{position:absolute;right:0;top:calc(100% + .5rem);z-index:20;width:min(46rem,calc(100vw - 2rem));background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:12px;padding:1rem;box-shadow:0 12px 40px rgba(0,0,0,.25);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.pick-cards ul{display:grid;grid-template-columns:repeat(auto-fill,minmax(8.5rem,1fr));gap:.8rem}
+.pick-cards a{display:flex;flex-direction:column;gap:.15rem;text-decoration:none;color:var(--fg);font-size:.85rem;line-height:1.3}
+.pick-cards img{border-radius:6px;border:1px solid var(--line);aspect-ratio:8/5;object-fit:cover;object-position:top}
+.pick-cards strong{display:block}
+.pick-cards a:hover strong{text-decoration:underline}
+.pick-cards span{color:var(--muted)}
+.pick-cards .now{color:var(--link);font-weight:600}
+.pick-cards .all{margin:.8rem 0 0;font-size:.9rem}
+.pick-cards .all a{display:inline;color:var(--link);text-decoration:underline}
+@media (max-width:40rem){
+ .top-row{flex-wrap:nowrap;gap:.5rem;padding:.45rem .8rem}
+ .top-row>ul{display:none}
+ .top .brand{min-width:0;flex:1 1 auto}
+ .top .brand small{display:none}
+ .top .brand .wm-sw{font-size:.82rem;line-height:1.1}.top .brand .wm-ac{font-size:.95rem}
+ .pick summary{font-size:.82rem;padding:.2rem .6rem}
+ .pick-cards{position:fixed;left:.8rem;right:.8rem;top:3.2rem;width:auto;max-height:80vh;overflow:auto}
+ .top .family-credit{margin-left:0}
+ .top .family-credit summary{font-size:.72rem}
+ .top .family-credit ul{position:fixed;right:.8rem;left:auto;top:3.2rem}
+}
+.top .brand .logo img{height:2rem;width:auto}
+.top .brand .logo.plate{padding:.2rem .4rem;border-radius:6px}
+.top .brand .wm-sgit{font-size:1.35rem}
+.top .brand .wm-ac,.top .brand .wm-sw{font-size:1.05rem}
+.top .brand .wm-ac svg,.top .brand .wm-sw svg{width:22px;height:22px}
+/* The Sovereign Website credit on a customer's site: one small, muted control at the far top right that opens a
+   pop-up menu of the family links. Not a strip and not a menu bar: the site is about its owner (Dinis, 20 November
+   2026: "It needs to fundamentally be about the site and who is it about ... top right pop-up menu").
+   CSS only (details/summary), so no script and no CSP issue. It sits in the page's corner, above the owner's header;
+   a site whose own header uses that corner moves it with --family-top / --family-right.
+   To remove it, the owner sets one attribute: <html data-family-credit="off">. */
+.family-credit{--fam-fg:var(--family-fg,#5a5a5a);--fam-strong:var(--family-fg-strong,#111);--fam-bg:var(--family-bg,#fff);
+  position:absolute;top:var(--family-top,.4rem);right:var(--family-right,.75rem);z-index:50;font-size:.75rem;line-height:1.4}
+@media (prefers-color-scheme:dark){.family-credit{--fam-fg:var(--family-fg,#b5b5b5);--fam-strong:var(--family-fg-strong,#fff);--fam-bg:var(--family-bg,#1c1c1c)}}
+.family-credit summary{display:inline-flex;align-items:center;gap:.3rem;cursor:pointer;color:var(--fam-fg);list-style:none;min-height:24px;padding:.15rem .3rem;border-radius:4px}
+.family-credit summary::-webkit-details-marker{display:none}
+.family-credit summary::after{content:"";width:.35rem;height:.35rem;border:solid currentColor;border-width:0 1px 1px 0;transform:rotate(45deg) translateY(-2px)}
+.family-credit summary:hover,.family-credit summary:focus-visible,.family-credit[open] summary{color:var(--fam-strong)}
+.family-credit ul{position:absolute;right:0;top:100%;margin:.25rem 0 0;padding:.35rem 0;list-style:none;min-width:11rem;
+  background:var(--fam-bg);border:1px solid rgba(127,127,127,.3);border-radius:6px;box-shadow:0 4px 16px rgba(0,0,0,.12)}
+.family-credit a{display:block;padding:.3rem .8rem;min-height:24px;color:var(--fam-fg);text-decoration:none}
+.family-credit a:hover,.family-credit a:focus-visible{color:var(--fam-strong);background:rgba(127,127,127,.1)}
+.family-credit .family-gap{border-bottom:1px solid rgba(127,127,127,.25);padding-bottom:.3rem;margin-bottom:.3rem}
+[data-family-credit="off"] .family-credit{display:none}
+@media print{.family-credit{display:none}}
+
+.top .family-credit{position:relative;top:auto;right:auto;font-size:.8rem;margin-left:auto}
+.top .family-credit ul{min-width:14rem}
+.top .family-credit ul{display:block;right:0}
+.top .family-credit li a{color:var(--fam-fg);display:block;padding:.3rem .8rem;text-decoration:none}
+.top .family-credit li a:hover{text-decoration:none;color:var(--fam-strong)}
+.foot{font:.85rem/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--muted);max-width:76rem;margin:0 auto;padding:1rem 1rem 2.5rem}
+.foot p{margin:0 0 .4rem}
+.foot a{color:var(--muted)}
+.foot .sws-version{opacity:1;color:var(--fg);border-color:var(--muted)}
+
+/* the company's own identity: logos and framed screenshots of the real site */
+.logo{display:inline-flex;align-items:center}
+.logo img{height:2.6rem;width:auto}
+.logo.plate{background:#fff;border-radius:10px;padding:.45rem .7rem}
+.wm-sgit{font:800 2.2rem/1 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;letter-spacing:-.02em}
+.wm-sgit b{color:#0f766e}
+.wm-ac,.wm-sw{display:inline-flex;align-items:center;gap:.5rem;font:700 1.5rem/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wm-sw{font-family:Georgia,"Iowan Old Style","Times New Roman",serif}
+.shot{margin:0}
+.shot .frame{display:block;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 18px 50px rgba(0,0,0,.28),0 0 0 1px rgba(127,127,127,.25);text-decoration:none;transition:transform .2s}
+.shot .frame:hover{transform:translateY(-3px)}
+.shot .bar{display:flex;align-items:center;gap:.35rem;padding:.45rem .7rem;background:#e9e9ec;color:#3b3b40;font:.75rem/1.2 ui-monospace,Menlo,Consolas,monospace}
+.shot .bar i{width:.6rem;height:.6rem;border-radius:50%;background:#c4c4ca;display:inline-block}
+.shot .bar i:first-child{background:#ff5f57}.shot .bar i:nth-child(2){background:#febc2e}.shot .bar i:nth-child(3){background:#28c840}
+.shot .bar span{margin-left:.5rem;background:#fff;border-radius:6px;padding:.15rem .6rem;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.shot img{width:100%;height:auto}
+.shot figcaption{font-size:.85rem;color:var(--muted);margin-top:.6rem}
+.gallery{display:grid;gap:1.6rem;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))}
+@media (prefers-reduced-motion:reduce){.shot .frame{transition:none}.shot .frame:hover{transform:none}}
+@media print{.top,.pick{display:none}}
+@media (max-width:40rem){.tl-svg{display:none}.map-svg{padding:.4rem!important}.map-svg .nlabel{font-size:27px!important}.map-svg .hlabel{font-size:32px!important}}
+:root{--bg:#faf9f5;--card:#ffffff;--fg:#1c1d21;--muted:#5c5f66;--line:#e5e1d5;--link:#0f766e;--acc:#0f766e;--acc-ink:#fff}@media (prefers-color-scheme:dark){:root{--bg:#0e1412;--card:#151d1b;--fg:#e7efec;--muted:#a3b3ae;--line:#26332f;--link:#5eead4;--acc:#5eead4;--acc-ink:#04201c}}
+.btns{display:flex;flex-wrap:wrap;gap:.7rem}
+.btn{display:inline-block;padding:.75rem 1.15rem;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid var(--acc);color:var(--acc);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.btn.primary{background:var(--acc);color:var(--acc-ink,#fff)}
+.btn:hover{filter:brightness(1.1)}
+.next{margin:2.5rem 0;padding:1.4rem 1.5rem;border-radius:16px;background:var(--card);border:1px solid var(--line)}
+.next-k{margin:0 0 .7rem;font:700 .78rem system-ui,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+.credit{font-weight:600}
+.sources ol{padding-left:1.6rem;font-size:.9rem}.sources .acc,.sources p{color:var(--muted)}
+.wrap{max-width:74rem;margin:0 auto;padding:0 1rem}
+@media (max-width:40rem){
+ .ihero{padding:1rem 0 2rem}.ihero .logo,.chathead .logo{display:none}
+ .chathead{padding:1rem 0 2rem}.seal{padding-top:1rem}.seal .ct{display:none}
+ .sheet{margin:0 auto;padding-top:.9rem}.sheet .kick{display:none}.sheet h1{margin-top:.2rem;padding-right:5.5rem}.stamp{font-size:.7rem}.stamp{top:.8rem;right:.8rem}
+ .stage .lanyard{order:2}.stage{padding-top:.8rem}
+ .chero,.shead,.hero{padding-top:1rem}.ghero{padding-top:1.2rem}
+}
+.exhibit>*,.ihero .wrap>*,.stage>*,.ghero .wrap>*,.strip>*{min-width:0}
+.shot figcaption{overflow-wrap:anywhere}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+body{font:1.06rem/1.65 ui-serif,Georgia,"Times New Roman",serif}
+.seal{background:#0d1117;color:#3fb950;padding:3rem 1rem 3.5rem;overflow:hidden;position:relative}
+.seal .ct{font:.85rem/1.5 ui-monospace,Menlo,monospace;color:#3fb950;word-break:break-all;max-height:9rem;overflow:hidden}
+.seal h1{position:relative;font:800 clamp(2.4rem,8vw,5.2rem)/1 ui-sans-serif,system-ui,sans-serif;color:#fff;margin:1.2rem 0 .8rem;letter-spacing:-.03em}
+.seal h1 b{color:#5eead4}
+.seal p{color:#c9d1d9;max-width:42rem;font-family:system-ui,sans-serif}
+.key{display:inline-flex;align-items:center;gap:.5rem;margin-top:1rem;background:#5eead4;color:#04201c;padding:.7rem 1.1rem;border-radius:999px;font:700 1rem ui-monospace,Menlo,monospace;text-decoration:none}
+.key::before{content:"\1F511"}
+.blk{position:relative;margin:2.6rem 0;padding:1.4rem 1.5rem;background:var(--card);border:1px solid var(--line);border-radius:14px}
+.blk h2{font:800 1.4rem/1.2 ui-sans-serif,system-ui,sans-serif;margin:0 0 .8rem}
+.blk .id{font:.75rem ui-monospace,Menlo,monospace;color:var(--muted);margin:0 0 .6rem}
+.blk .ct{position:absolute;inset:0;border-radius:14px;background:#0d1117;color:#3fb950;font:.8rem/1.45 ui-monospace,Menlo,monospace;padding:1.2rem 1.4rem;word-break:break-all;overflow:hidden;pointer-events:none;opacity:0}
+@supports (animation-timeline:view()){
+ .blk .ct{opacity:1;animation:open linear both;animation-timeline:view();animation-range:entry 0% entry 90%}
+ @keyframes open{from{opacity:1}to{opacity:0}}
+}
+.cards{list-style:none;padding:0;display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr))}
+.cards li{border-left:4px solid var(--acc);padding:.2rem .9rem}.cards h3{margin:0;font:700 1.05rem system-ui,sans-serif}.cards p{margin:.2rem 0 0;color:var(--muted)}
+.flow{padding-left:1.3rem}.flow li{margin:.4rem 0}.flow b{display:block;font-family:system-ui,sans-serif}
+.tl-list{padding-left:1.3rem}.tl-list time{font:700 .9rem system-ui,sans-serif;color:var(--acc);display:block}
+.figs{list-style:none;padding:0;display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(11rem,1fr))}
+.figs li{display:flex;flex-direction:column}.figs .n{font:800 1.8rem system-ui,sans-serif;color:var(--acc)}.figs .d{font-size:.75rem;color:var(--muted)}
+</style>
+</head>
+<body class="d-vault">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><nav class="top-row" aria-label="sgit"><a class="brand" href="../index.html"><span class="logo" role="img" aria-label="sgit.ai"><span class="wm-sgit">sgit<b>.ai</b></span></span><small>Git for encrypted vaults</small></a><ul><li><a href="#v-what">Inside</a></li><li><a href="#v-how">Sealed</a></li><li><a href="#v-products">Parts</a></li><li><a href="#v-h-src">Sources</a></li><li><a class="visit" href="https://sgit.ai/">Visit sgit.ai &#8599;</a></li></ul><details class="pick"><summary>Choose a design</summary><div class="pick-cards"><p class="sr">The same facts in five designs.</p><ul><li><a href="../index.html"><img src="../img/designs/terminal.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Terminal</strong><span>A terminal session, and what the server sees</span></a></li><li><a href="../designs/vault.html" aria-current="page"><img src="../img/designs/vault.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Vault</strong><span>Sealed blocks that open as you read</span><span class="now">You are here</span></a></li><li><a href="../designs/sgit-ai.html"><img src="../img/designs/sgit-ai.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>Identity: sgit.ai</strong><span>In sgit.ai&#x27;s own look, with its live home page</span></a></li><li><a href="../designs/vaults.html"><img src="../img/designs/vaults.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>Identity: the four vaults</strong><span>sgit.ai&#x27;s own strip of example vaults</span></a></li><li><a href="../designs/newsroom.html"><img src="../img/designs/newsroom.webp" width="640" height="400" alt="" loading="lazy" decoding="async"><strong>The Newsroom</strong><span>A newsroom feature, printable on A4</span></a></li></ul><p class="all"><a href="../designs/index.html">All designs</a> &middot; the home page uses The Terminal.</p></div></details><details class="family-credit">
+  <summary>Sovereign Website</summary>
+  <ul>
+    <li><a href="/start/">Start here</a></li>
+    <li><a href="/agents/">Use with your AI</a></li>
+    <li class="family-gap"><a href="/admin/">How this site was made</a></li>
+    <li><a href="https://sgit.startups.sovereignweb.site/" aria-current="true">sgit</a></li>
+    <li><a href="https://the-cyber-boardroom.startups.sovereignweb.site/">The Cyber Boardroom</a></li>
+    <li><a href="https://risk-mandate.startups.sovereignweb.site/">RiskMandate</a></li>
+    <li><a href="https://agentic-cells.startups.sovereignweb.site/">AgentiCCells</a></li>
+    <li class="family-gap"><a href="https://sovereign-website.startups.sovereignweb.site/">Sovereign Website</a></li>
+    <li><a href="https://sovereignwebsite.ai/">Sovereign Website</a></li>
+    <li><a href="https://sovereignwebsite.org/">Principles</a></li>
+    <li><a href="https://sovereignwebsite.site/">Hosted</a></li>
+    <li><a href="https://hub.sovereignweb.site/">Hub</a></li>
+    <li><a href="https://agents.sovereignweb.site/">Agents</a></li>
+    <li><a href="https://vault.sovereignwebsite.site/">Vault</a></li>
+    <li><a href="https://agenticcells.ai/">AgentiCCells</a></li>
+    <li><a href="https://riskmandate.ai/">RiskMandate</a></li>
+    <li><a href="https://newsroom.sgit.ai/">Newsroom</a></li>
+  </ul>
+</details></nav></header>
+<main id="main"><div class="seal"><div class="wrap"><div class="ct" aria-hidden="true">abd49af0 13647ae8 2b545287 2b1a11c5 cc96b22a 2a441476 3ea3928c e18fac2c abd49af0 13647ae8 2b545287 2b1a11c5 cc96b22a 2a441476 3ea3928c e18fac2c abd49af0 13647ae8 2b545287 2b1a11c5 cc96b22a 2a441476 3ea3928c e18fac2c abd49af0 13647ae8 2b545287 2b1a11c5 cc96b22a 2a441476 3ea3928c e18fac2c abd49af0 13647ae8 2b545287 2b1a11c5 cc96b22a 2a441476 3ea3928c e18fac2c                                                </div><h1>This page is <b>sealed</b>.</h1><p>Each block below starts as ciphertext and opens as it reaches you, the way a vault opens with its read key. Under reduced motion it is plain text from the start.</p><a class="key" href="#v-what">Open it with the read key</a></div></div><div class="wrap"><section class="blk" id="v-what"><p class="id">obj-395c1bd623c98371</p><h2>What is inside</h2><p>sgit is a command-line tool for folders of files that are encrypted with AES-256-GCM on your own machine before they are uploaded. You clone, commit, branch, diff and merge them much as you would with git.<sup class="cites"><a href="#v-src-2" class="cite" aria-label="source 2">2</a></sup></p><p>The server stores only ciphertext under opaque IDs. It never sees filenames, file contents or commit messages.<sup class="cites"><a href="#v-src-2" class="cite" aria-label="source 2">2</a></sup></p><p>A vault can be handed to someone with a single read key: no account, no hosting and nothing for the reader to install. The same vault opens in a browser through SG/Vault.<sup class="cites"><a href="#v-src-1" class="cite" aria-label="source 1">1</a></sup></p><p>The code is free under Apache-2.0. What is sold is the running, maintained hosted service, at sgraph.ai; self-hosting is documented. sgit is marked beta.<sup class="cites"><a href="#v-src-3" class="cite" aria-label="sources 3 and 4 and 13">3</a></sup></p><ul><li>AI agents and the people working with them: agent state that must outlive the context window, shared between agents, with a human reviewing merges.<sup class="cites"><a href="#v-src-1" class="cite" aria-label="sources 1 and 4">1</a></sup></li><li>Professional services such as legal, M&amp;A, audit and security assessment, handling client working documents.<sup class="cites"><a href="#v-src-4" class="cite" aria-label="source 4">4</a></sup></li><li>Health and regulated sectors, where a host that provably cannot read the content changes what is allowed.<sup class="cites"><a href="#v-src-4" class="cite" aria-label="source 4">4</a></sup></li><li>Not for everyone: if your files are not sensitive, the site says to use git and a private repository.<sup class="cites"><a href="#v-src-4" class="cite" aria-label="sources 4 and 5">4</a></sup></li></ul><div class="ct" aria-hidden="true">d769f83a 0dec296f e394f4e5 a83fb310 f17d1471 e47e8dc4 45fc7c49 a0bee5b4 d769f83a 0dec296f e394f4e5 a83fb310 f17d1471 e47e8dc4 45fc7c49 a0bee5b4 d769f83a 0dec296f e394f4e5 a83fb310 f17d1471 e47e8dc4 45fc7c49 a0bee5b4 d769f83a 0dec296f e394f4e5 a83fb310 f17d1471 e47e8dc4 45fc7c49 a0bee5b4 d769f83a 0dec296f e394f4e5 a83fb310 f17d1471 e47e8dc4 45fc7c49 a0bee5b4 d769f83a 0dec296f e394f4e5 a83fb310 f17d1471 e47e8dc4 45fc7c49 a0bee5b4 d769f83a 0dec296f e394f4e5 a83fb310 f17d1471 e47e8dc4 45fc7c49 a0bee5b4 d769f83a 0dec296f e394f4e5 a83fb310 f17d1471 e47e8dc4 45fc7c49 a0bee5b4 d769f83a 0dec296f e394f4e5 a83fb310 f17d1471 e47e8dc4 45fc7c49 a0bee5b4 d769f83a 0dec296f e394f4e5 a83fb310 f17d1471 e47e8dc4 45fc7c49 a0bee5b4 d769f83a 0dec296f e394f4e5 a83fb310 f17d1471 e47e8dc4 45fc7c49 a0bee5b4 d769f83a 0dec296f e394f4e5 a83fb310 f17d1471 e47e8dc4 45fc7c49 a0bee5b4 d769f83a 0dec296f e394f4e5 a83fb310 f17d1471 e47e8dc4 45fc7c49 a0bee5b4 d769f83a 0dec296f e394f4e5 a83fb310 f17d1471 e47e8dc4 45fc7c49 a0bee5b4 d769f83a</div></section><section class="blk" id="v-how"><p class="id">obj-b789efc99a1b443e</p><h2>How it is sealed</h2><ol class="flow"><li><b>A folder becomes a vault</b><span>An ordinary folder gains a .sg_vault directory. A commit snapshots the whole folder; there is no staging area.<sup class="cites"><a href="#v-src-2" class="cite" aria-label="sources 2 and 6">2</a></sup></span></li><li><b>Encrypted on your machine</b><span>Every commit, tree and blob is encrypted with AES-256-GCM before upload, with keys derived by PBKDF2 at 600,000 iterations.<sup class="cites"><a href="#v-src-2" class="cite" aria-label="sources 2 and 7">2</a></sup></span></li><li><b>The server sees ciphertext</b><span>Objects are stored under opaque IDs. The server can see sizes and timing, never names or contents.<sup class="cites"><a href="#v-src-2" class="cite" aria-label="sources 2 and 7">2</a></sup></span></li><li><b>One string opens it</b><span>The vault key is address, credential and root of every key. A one-way read key decrypts but cannot write, so it can be published.<sup class="cites"><a href="#v-src-2" class="cite" aria-label="sources 2 and 4">2</a></sup></span></li><li><b>Merge, in terminal or browser</b><span>Each machine or agent gets a private branch; shared branches merge three ways. The browser app speaks the same format.<sup class="cites"><a href="#v-src-1" class="cite" aria-label="sources 1 and 6">1</a></sup></span></li></ol><div class="ct" aria-hidden="true">15a21856 2a3209fc e00efd6c b362f4bd 0cefd43e 6ec3bf8a 531d9bb5 bf89a902 15a21856 2a3209fc e00efd6c b362f4bd 0cefd43e 6ec3bf8a 531d9bb5 bf89a902 15a21856 2a3209fc e00efd6c b362f4bd 0cefd43e 6ec3bf8a 531d9bb5 bf89a902 15a21856 2a3209fc e00efd6c b362f4bd 0cefd43e 6ec3bf8a 531d9bb5 bf89a902 15a21856 2a3209fc e00efd6c b362f4bd 0cefd43e 6ec3bf8a 531d9bb5 bf89a902 15a21856 2a3209fc e00efd6c b362f4bd 0cefd43e 6ec3bf8a 531d9bb5 bf89a902 15a21856 2a3209fc e00efd6c b362f4bd 0cefd43e 6ec3bf8a 531d9bb5 bf89a902 15a21856 2a3209fc e00efd6c b362f4bd 0cefd43e 6ec3bf8a 531d9bb5 bf89a902 15a21856 2a3209fc e00efd6c b362f4bd 0cefd43e 6ec3bf8a 531d9bb5 bf89a902 15a21856 2a3209fc e00efd6c b362f4bd 0cefd43e 6ec3bf8a 531d9bb5 bf89a902 15a21856 2a3209fc e00efd6c b362f4bd 0cefd43e 6ec3bf8a 531d9bb5 bf89a902 15a21856 2a3209fc e00efd6c b362f4bd 0cefd43e 6ec3bf8a 531d9bb5 bf89a902 15a21856 2a3209fc e00efd6c b362f4bd 0cefd43e 6ec3bf8a 531d9bb5 bf89a902         </div></section><section class="blk" id="v-products"><p class="id">obj-2aa9af7fc94249c2</p><h2>The parts</h2><ul class="cards"><li><h3><a href="https://sgit.ai/docs/installation.html">sgit</a></h3><p>The command-line tool: pip install sgit-ai. Pure Python, Python 3.11 or newer, two runtime dependencies, Apache-2.0.<sup class="cites"><a href="#v-src-8" class="cite" aria-label="sources 8 and 3">8</a></sup></p></li><li><h3>SG/Vault</h3><p>A web app to browse and edit vaults and run their apps in the browser, an independent implementation of the same wire format.<sup class="cites"><a href="#v-src-3" class="cite" aria-label="source 3">3</a></sup></p></li><li><h3>SG/Send</h3><p>The zero-knowledge storage and transfer API both clients speak to, hosted by sgraph.ai or self-hosted.<sup class="cites"><a href="#v-src-3" class="cite" aria-label="source 3">3</a></sup></p></li><li><h3><a href="https://sgit.ai/demos/vaults/index.html">Published vaults</a></h3><p>A catalogue of vaults with public read keys: 54 when last updated on 13 October 2026.<sup class="cites"><a href="#v-src-10" class="cite" aria-label="source 10">10</a></sup></p></li><li><h3><a href="https://newsroom.sgit.ai/">SGit Newsroom</a></h3><p>Articles, a newsletter and a reading meter, at its own address since October 2026.<sup class="cites"><a href="#v-src-11" class="cite" aria-label="sources 11 and 9">11</a></sup></p></li></ul><div class="ct" aria-hidden="true">16df8641 61c904ec 1bd6c8a4 68c52f75 eb031f29 08518b75 57e029a0 9eee68a8 16df8641 61c904ec 1bd6c8a4 68c52f75 eb031f29 08518b75 57e029a0 9eee68a8 16df8641 61c904ec 1bd6c8a4 68c52f75 eb031f29 08518b75 57e029a0 9eee68a8 16df8641 61c904ec 1bd6c8a4 68c52f75 eb031f29 08518b75 57e029a0 9eee68a8 16df8641 61c904ec 1bd6c8a4 68c52f75 eb031f29 08518b75 57e029a0 9eee68a8 16df8641 61c904ec 1bd6c8a4 68c52f75 eb031f29 08518b75 57e029a0 9eee68a8 16df8641 61c904ec 1bd6c8a4 68c52f75 eb031f29 08518b75 57e029a0 9eee68a8 16df8641 61c904ec 1bd6c8a4 68c52f75 eb031f29 08518b75 57e029a0 9eee68a8 16df8641 61c904ec 1bd6c8a4 68c52f75 eb031f29 08518b75 57e029a0 9eee68a8 16df8641 61c904ec 1bd6c8a4 68c52f75 eb031f29 08518b75 57e029a0 9eee68a8 16df8641 61c904ec 1bd6c8a4 68c52f75 eb031f29 08518b75 57e029a0 9eee68a8                         </div></section><section class="blk" id="v-story"><p class="id">obj-a0b7d6c12d2cda2e</p><h2>The history</h2><ol class="tl-list"><li><time datetime="2026-03-20">20 March 2026</time> <span>First sgit-ai release on PyPI, version 0.8.17.<sup class="cites"><a href="#v-src-13" class="cite" aria-label="source 13">13</a></sup></span></li><li><time datetime="2026-05-01">1 May 2026</time> <span>Version 0.11.0; May ends with 36 releases in the month.<sup class="cites"><a href="#v-src-13" class="cite" aria-label="source 13">13</a></sup></span></li><li><time datetime="2026-08-11">11 August 2026</time> <span>The sgit.ai site begins, at version 0.1.1.<sup class="cites"><a href="#v-src-9" class="cite" aria-label="source 9">9</a></sup></span></li><li><time datetime="2026-08-13">13 August 2026</time> <span>Version 0.15.0, the release the security page cites for public-key signing.<sup class="cites"><a href="#v-src-13" class="cite" aria-label="sources 13 and 7">13</a></sup></span></li><li><time datetime="2026-08-16">16 August 2026</time> <span>The first published vaults, numbers 1 to 3.<sup class="cites"><a href="#v-src-10" class="cite" aria-label="source 10">10</a></sup></span></li><li><time datetime="2026-10-07">7 October 2026</time> <span>The SGit Newsroom and newsletter are announced.<sup class="cites"><a href="#v-src-12" class="cite" aria-label="source 12">12</a></sup></span></li><li><time datetime="2026-10-13">13 October 2026</time> <span>The newsroom moves to newsroom.sgit.ai; the site, at version 0.7.87, lists 54 vaults.<sup class="cites"><a href="#v-src-9" class="cite" aria-label="sources 9 and 10">9</a></sup></span></li><li><time datetime="2026-10-28">28 October 2026</time> <span>Version 0.27.0, the latest stable release when this page was checked.<sup class="cites"><a href="#v-src-13" class="cite" aria-label="source 13">13</a></sup></span></li></ol><div class="ct" aria-hidden="true">f2479127 9264aa63 0780d1a6 564e9ade f89710ea 73ddf9d7 4070014d 2673e877 f2479127 9264aa63 0780d1a6 564e9ade f89710ea 73ddf9d7 4070014d 2673e877 f2479127 9264aa63 0780d1a6 564e9ade f89710ea 73ddf9d7 4070014d 2673e877 f2479127 9264aa63 0780d1a6 564e9ade f89710ea 73ddf9d7 4070014d 2673e877 f2479127 9264aa63 0780d1a6 564e9ade f89710ea 73ddf9d7 4070014d 2673e877 f2479127 9264aa63 0780d1a6 564e9ade f89710ea 73ddf9d7 4070014d 2673e877 f2479127 9264aa63 0780d1a6 564e9ade f89710ea 73ddf9d7 4070014d 2673e877 f2479127 9264aa63 0780d1a6 564e9ade f89710ea 73ddf9d7 4070014d 2673e877 f2479127 9264aa63 0780d1a6 564e9ade f89710ea 73ddf9d7 4070014d 2673e877 f2479127 9264aa63 0780d1a6 564e9ade f89710ea 73ddf9d7 4070014d 2673e877 f2479127 9264aa63 0780d1a6 564e9ade f89710ea 73ddf9d7 4070014d 2673e877 f2479127 9264aa63 0780d1a6 564e9ade f89710ea 73ddf9d7 4070014d 2673e877                 </div></section><section class="blk" id="v-figures"><p class="id">obj-2d915f82c872f278</p><h2>The numbers</h2><ul class="figs"><li><span class="n">0.27.0</span><span class="l">latest stable release on PyPI</span><span class="d">as published 28 October 2026<sup class="cites"><a href="#v-src-13" class="cite" aria-label="source 13">13</a></sup></span></li><li><span class="n">~4,000</span><span class="l">tests, with mutation testing in CI</span><span class="d">as published 13 October 2026<sup class="cites"><a href="#v-src-1" class="cite" aria-label="source 1">1</a></sup></span></li><li><span class="n">54</span><span class="l">published vaults with public read keys</span><span class="d">as published 13 October 2026<sup class="cites"><a href="#v-src-10" class="cite" aria-label="source 10">10</a></sup></span></li><li><span class="n">600,000</span><span class="l">PBKDF2 iterations deriving each vault&#x27;s keys</span><span class="d">as published 13 October 2026<sup class="cites"><a href="#v-src-7" class="cite" aria-label="source 7">7</a></sup></span></li><li><span class="n">2</span><span class="l">runtime dependencies</span><span class="d">as published 13 October 2026<sup class="cites"><a href="#v-src-8" class="cite" aria-label="source 8">8</a></sup></span></li></ul><div class="ct" aria-hidden="true">38343840 5e142af0 4a61c872 b0ff511f 5d6d4f48 73c8bc3d b50ba3fa 3245efe3 38343840 5e142af0 4a61c872 b0ff511f 5d6d4f48 73c8bc3d b50ba3fa 3245efe3 38343840 5e142af0 4a61c872 b0ff511f 5d6d4f48 73c8bc3d b50ba3fa 3245efe3 38343840 5e142af0 4a61c872 b0ff511f 5d6d4f48 73c8bc3d b50ba3fa 3245efe3 38343840 5e142af0 4a61c872 b0ff511f 5d6d4f48 73c8bc3d b50ba3fa 3245efe3 38343840 5e142af0 4a61c872 b0ff511f 5d6d4f48 73c8bc3d b50ba3fa 3245efe3 38343840 5e142af0 4a61c872 b0ff511f 5d6d4f48 73c8bc3d b50ba3fa 3245efe3 38343840 5e142af0 4a61c872 b0ff511f 5d6d4f48 73c8bc3d b50ba3fa 3245efe3                                                 </div></section><div class="next"><p class="next-k">Next step, on sgit.ai</p><div class="btns"><a class="btn primary" href="https://sgit.ai/docs/quickstart.html">5-minute quickstart &#8599;</a><a class="btn" href="https://sgit.ai/demos/vaults/index.html">Open a real vault &#8599;</a></div></div><section class="sources" aria-labelledby="v-h-src"><h2 id="v-h-src">Sources</h2><p>Every fact on this page comes from the company's own public pages, listed here. Numbers in the text point to them. Diagrams were drawn for this site from those facts.</p><ol><li id="v-src-1"><a href="https://sgit.ai/">sgit.ai, home page</a> <span class="acc">read 20 November 2026</span></li><li id="v-src-2"><a href="https://sgit.ai/docs/what-is-sgit.html">sgit.ai, what is sgit</a> <span class="acc">read 20 November 2026</span></li><li id="v-src-3"><a href="https://sgit.ai/investors/index.html">sgit.ai, investors</a> <span class="acc">read 20 November 2026</span></li><li id="v-src-4"><a href="https://sgit.ai/why/index.html">sgit.ai, why sgit</a> <span class="acc">read 20 November 2026</span></li><li id="v-src-5"><a href="https://sgit.ai/docs/limitations.html">sgit.ai, limitations</a> <span class="acc">read 20 November 2026</span></li><li id="v-src-6"><a href="https://sgit.ai/llms.txt">sgit.ai, llms.txt</a> <span class="acc">read 20 November 2026</span></li><li id="v-src-7"><a href="https://sgit.ai/security/index.html">sgit.ai, security</a> <span class="acc">read 20 November 2026</span></li><li id="v-src-8"><a href="https://sgit.ai/docs/installation.html">sgit.ai, installation</a> <span class="acc">read 20 November 2026</span></li><li id="v-src-9"><a href="https://sgit.ai/admin/versions.html">sgit.ai, site versions</a> <span class="acc">read 20 November 2026</span></li><li id="v-src-10"><a href="https://sgit.ai/demos/vaults/index.html">sgit.ai, published vaults</a> <span class="acc">read 20 November 2026</span></li><li id="v-src-11"><a href="https://newsroom.sgit.ai/llms.txt">SGit Newsroom, llms.txt</a> <span class="acc">read 20 November 2026</span></li><li id="v-src-12"><a href="https://sgit.ai/updates/index.html">sgit.ai, updates</a> <span class="acc">read 20 November 2026</span></li><li id="v-src-13"><a href="https://pypi.org/project/sgit-ai/#history">PyPI, sgit-ai release history</a> <span class="acc">read 20 November 2026</span></li><li id="v-src-14"><a href="https://sgit.ai/about/index.html">sgit.ai, about</a> <span class="acc">read 20 November 2026</span></li></ol></section></div></main><footer class="foot"><p>An independent brochure about sgit, made from its own public pages. For the real thing, go to <a href="https://sgit.ai/">sgit.ai</a>.</p><p>Facts last checked 20 November 2026. Text licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>; names and marks belong to their owners. No cookies, no tracking, no scripts. <a href="../designs/index.html">All designs</a> &middot; <a href="https://github.com/SovereignWebsite/Site__Startups__Sgit">Source</a>.</p></footer>
+</body>
+</html>

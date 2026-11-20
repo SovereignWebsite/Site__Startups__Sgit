@@ -8,7 +8,7 @@
  "url_label": "sgit.ai",
  "repo": "https://github.com/SovereignWebsite/Site__Startups__Sgit",
  "updated": "2026-11-20",
- "home": "blueprint",
+ "home": "terminal",
  "description": "An independent brochure about sgit, git for encrypted vaults, for humans and AI agents, made from its own public pages.",
  "headline": "Version control for files the server must never read",
  "lede": "sgit lets people and AI agents clone, commit, branch and merge folders of files that are encrypted on their own machine before upload. The server holds only ciphertext, and a one-way read key lets anyone open a vault without an account.",
@@ -476,8 +476,250 @@
     "file": "img/real/why.webp",
     "url": "https://sgit.ai/why/index.html",
     "caption": "Why does this exist? sgit.ai's own boundary map"
+   },
+   {
+    "file": "img/real/v-reference.webp",
+    "url": "https://sgit.ai/demos/vaults/aiuc-1-conformance/index.html",
+    "caption": "Reference: the AIUC-1 conformance layer vault on sgit.ai"
+   },
+   {
+    "file": "img/real/v-application.webp",
+    "url": "https://sgit.ai/demos/vaults/agent-permission-games/index.html",
+    "caption": "Application: the agent permission games vault on sgit.ai"
+   },
+   {
+    "file": "img/real/v-presentation.webp",
+    "url": "https://sgit.ai/demos/vaults/blackhat-eu-2025/index.html",
+    "caption": "Presentation: AI vs. AI, Black Hat EU 2025, as a vault on sgit.ai"
+   },
+   {
+    "file": "img/real/v-report.webp",
+    "url": "https://sgit.ai/demos/vaults/pentest-report/index.html",
+    "caption": "Report: a penetration test report (fictional) as a vault on sgit.ai"
    }
   ]
  },
- "images_note": "Used with Dinis Cruz's agreement (20 November 2026, relayed by sites.b): these are his own companies, so their published brand assets may be used. Logo: from https://sgit.ai/. Screenshots of the company's live site, taken by startups.b with Playwright on 20 November 2026 and linked to the page each shows: https://sgit.ai/; https://sgit.ai/demos/vaults/index.html; https://sgit.ai/why/index.html. Every diagram, the favicon and the share card were drawn for this site."
+ "images_note": "Used with Dinis Cruz's agreement (20 November 2026, relayed by sites.b): these are his own companies, so their published brand assets may be used. Logo: from https://sgit.ai/. Screenshots of the company's live site, taken by startups.b with Playwright on 20 November 2026 and linked to the page each shows: https://sgit.ai/; https://sgit.ai/demos/vaults/index.html; https://sgit.ai/why/index.html. Every diagram, the favicon and the share card were drawn for this site.",
+ "next": [
+  {
+   "label": "5-minute quickstart",
+   "url": "https://sgit.ai/docs/quickstart.html"
+  },
+  {
+   "label": "Open a real vault",
+   "url": "https://sgit.ai/demos/vaults/index.html"
+  }
+ ],
+ "designs": [
+  {
+   "key": "terminal",
+   "name": "The Terminal",
+   "blurb": "A terminal session, and what the server sees",
+   "engine": "terminal",
+   "cfg": {
+    "h1": "Commit it. <b>The server only sees ciphertext.</b>",
+    "caption": "A session drawn for this site from sgit's documentation and its command list; the comments are the brochure's facts, each with its source.",
+    "session": [
+     {
+      "cmd": "pip install sgit-ai",
+      "server": "<b>nothing yet</b>: the tool runs on your machine",
+      "notes": [
+       {
+        "t": "Pure Python, Python 3.11 or newer, two runtime dependencies, Apache-2.0.",
+        "s": [
+         8
+        ]
+       }
+      ]
+     },
+     {
+      "cmd": "sgit clone <read key>",
+      "server": "<b>vault id</b>, opaque object ids, sizes, timing",
+      "notes": [
+       {
+        "t": "A vault can be handed to someone with a single read key: no account, no hosting and nothing for the reader to install.",
+        "s": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "cmd": "sgit commit",
+      "server": "<b>a3f9 1c07 e2b4 90dd</b> &#8230; ciphertext only: no names, no contents, no messages",
+      "notes": [
+       {
+        "t": "Every commit, tree and blob is encrypted with AES-256-GCM on your own machine before upload.",
+        "s": [
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "cmd": "sgit branch",
+      "server": "<b>more ciphertext</b> under opaque ids",
+      "notes": [
+       {
+        "t": "Each machine or agent gets a private clone branch; shared named branches sit beside them.",
+        "s": [
+         6
+        ]
+       }
+      ]
+     },
+     {
+      "cmd": "sgit pull",
+      "server": "<b>ciphertext in, ciphertext out</b>",
+      "notes": [
+       {
+        "t": "A real three-way merge, with conflict files and a base, ours and theirs view.",
+        "s": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "cmd": "sgit push",
+      "server": "<b>the same bytes the browser reads</b>: SG/Vault speaks this format too",
+      "notes": [
+       {
+        "t": "The same vault opens in a browser through SG/Vault.",
+        "s": [
+         1
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "key": "vault",
+   "name": "The Vault",
+   "blurb": "Sealed blocks that open as you read",
+   "engine": "vault",
+   "cfg": {
+    "h1": "This page is <b>sealed</b>.",
+    "sub": "Each block below starts as ciphertext and opens as it reaches you, the way a vault opens with its read key. Under reduced motion it is plain text from the start.",
+    "key": "Open it with the read key"
+   }
+  },
+  {
+   "key": "sgit-ai",
+   "name": "Identity: sgit.ai",
+   "blurb": "In sgit.ai's own look, with its live home page",
+   "engine": "identity",
+   "cfg": {
+    "palette": {
+     "light": {
+      "bg": "#faf9f5",
+      "card": "#ffffff",
+      "fg": "#1c1d21",
+      "muted": "#5c5f66",
+      "line": "#e5e1d5",
+      "link": "#0f766e",
+      "acc": "#0f766e",
+      "acc-ink": "#fff",
+      "herobg": "#f2f0e9",
+      "heroink": "#101114",
+      "heroacc": "#0f766e",
+      "heroacc-ink": "#fff"
+     },
+     "dark": {
+      "bg": "#0f1412",
+      "card": "#161d1b",
+      "fg": "#e8efec",
+      "muted": "#a6b4af",
+      "line": "#26332f",
+      "link": "#5eead4",
+      "acc": "#5eead4",
+      "acc-ink": "#04201c",
+      "herobg": "#0b1513",
+      "heroink": "#e8efec",
+      "heroacc": "#5eead4",
+      "heroacc-ink": "#04201c"
+     }
+    },
+    "h1_font": "700 clamp(2.2rem,5.6vw,3.8rem)/1.1 ui-serif,Georgia,\"Times New Roman\",serif",
+    "h2_font": "700 clamp(1.4rem,3vw,2rem)/1.2 ui-serif,Georgia,serif",
+    "h1": "A vault is a unit of work: data, app, history and sources, shipped as one string",
+    "h1_s": [
+     1
+    ],
+    "sub": "\"Version it like git. Hand it over with a single read key, no account, no hosting, no install for the reader. And the server that stores it cannot read it.\"",
+    "hero": "shot",
+    "shot": 0,
+    "strip_below": [
+     1,
+     2
+    ],
+    "strip_title": "More of sgit.ai"
+   }
+  },
+  {
+   "key": "vaults",
+   "name": "Identity: the four vaults",
+   "blurb": "sgit.ai's own strip of example vaults",
+   "engine": "identity",
+   "cfg": {
+    "palette": {
+     "light": {
+      "bg": "#faf9f5",
+      "card": "#ffffff",
+      "fg": "#1c1d21",
+      "muted": "#5c5f66",
+      "line": "#e5e1d5",
+      "link": "#0f766e",
+      "acc": "#0f766e",
+      "acc-ink": "#fff",
+      "herobg": "#f2f0e9",
+      "heroink": "#101114",
+      "heroacc": "#0f766e",
+      "heroacc-ink": "#fff"
+     },
+     "dark": {
+      "bg": "#0f1412",
+      "card": "#161d1b",
+      "fg": "#e8efec",
+      "muted": "#a6b4af",
+      "line": "#26332f",
+      "link": "#5eead4",
+      "acc": "#5eead4",
+      "acc-ink": "#04201c",
+      "herobg": "#0b1513",
+      "heroink": "#e8efec",
+      "heroacc": "#5eead4",
+      "heroacc-ink": "#04201c"
+     }
+    },
+    "h1_font": "700 clamp(2.2rem,5.6vw,3.8rem)/1.1 ui-serif,Georgia,serif",
+    "h2_font": "700 clamp(1.4rem,3vw,2rem)/1.2 ui-serif,Georgia,serif",
+    "h1": "Four of 54 published vaults",
+    "h1_s": [
+     1
+    ],
+    "sub": "\"Each opens with a read key printed on its page, no account, nothing to install, and the server that stores it cannot read it.\" Reference, application, presentation and report, from sgit.ai's home page.",
+    "hero": "strip",
+    "strip": [
+     3,
+     4
+    ],
+    "strip_below": [
+     3,
+     4,
+     5,
+     6
+    ],
+    "strip_title": "The four vaults, on sgit.ai"
+   }
+  },
+  {
+   "key": "newsroom",
+   "name": "The Newsroom",
+   "blurb": "A newsroom feature, printable on A4",
+   "engine": "newsroom"
+  }
+ ]
 }
