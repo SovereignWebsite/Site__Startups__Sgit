@@ -473,8 +473,8 @@
     "url": "https://sgit.ai/",
     "caption": "The sgit.ai home page: a vault is a unit of work",
     "phone": "img/real/home-phone.webp",
-    "phone_w": 800,
-    "phone_h": 440
+    "phone_w": 960,
+    "phone_h": 360
    },
    {
     "file": "img/real/vaults.webp",
