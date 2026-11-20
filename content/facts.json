@@ -574,8 +574,8 @@
       "heroacc-ink": "#04201c"
      }
     },
-    "h1_font": "700 clamp(2.2rem,5.6vw,3.8rem)/1.1 ui-serif,Georgia,\"Times New Roman\",serif",
-    "h2_font": "700 clamp(1.4rem,3vw,2rem)/1.2 ui-serif,Georgia,serif",
+    "h1_font": "700 clamp(2.2rem,5.6vw,3.8rem)/1.1 \"Iowan Old Style\",Charter,Georgia,serif",
+    "h2_font": "700 clamp(1.4rem,3vw,2rem)/1.2 \"Iowan Old Style\",Charter,Georgia,serif",
     "h1": "A vault is a unit of work: data, app, history and sources, shipped as one string",
     "h1_s": [
      1
@@ -721,8 +721,8 @@
       "heroacc-ink": "#04201c"
      }
     },
-    "h1_font": "700 clamp(2.2rem,5.6vw,3.8rem)/1.1 ui-serif,Georgia,serif",
-    "h2_font": "700 clamp(1.4rem,3vw,2rem)/1.2 ui-serif,Georgia,serif",
+    "h1_font": "700 clamp(2.2rem,5.6vw,3.8rem)/1.1 \"Iowan Old Style\",Charter,Georgia,serif",
+    "h2_font": "700 clamp(1.4rem,3vw,2rem)/1.2 \"Iowan Old Style\",Charter,Georgia,serif",
     "h1": "Four of 54 published vaults",
     "h1_s": [
      1
