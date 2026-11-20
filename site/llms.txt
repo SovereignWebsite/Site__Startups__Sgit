@@ -1,6 +1,6 @@
 # sgit
 
-> A brochure for sgit, with links to its own site.
+> An independent brochure about sgit, git for encrypted vaults, for humans and AI agents, made from its own public pages.
 
 This file is for AI agents and the people using them. The site is https://sgit.startups.sovereignweb.site/, static files in the public repository https://github.com/SovereignWebsite/Site__Startups__Sgit (served from site/ on the dev branch). Pick the section that matches who you are acting for, read it in full, then follow it.
 
@@ -23,3 +23,30 @@ This file is for AI agents and the people using them. The site is https://sgit.s
 - Start here (for the owner): https://sgit.startups.sovereignweb.site/start/
 - How this site was made: https://sgit.startups.sovereignweb.site/admin/
 - The agents that work on this site: https://sgit.startups.sovereignweb.site/data/agents.json
+
+An independent brochure about sgit, made from its own public pages. Official site: https://sgit.ai/
+
+## Pages
+
+- [The Brochure](https://sgit.startups.sovereignweb.site/designs/brochure.html): The company at a glance, with diagrams
+- [The Blueprint](https://sgit.startups.sovereignweb.site/index.html): A dark technical spec sheet
+- [The Story](https://sgit.startups.sovereignweb.site/designs/story.html): Told in order, date by date
+- [The Newsroom](https://sgit.startups.sovereignweb.site/designs/newsroom.html): A magazine feature about the company
+- [The Brief](https://sgit.startups.sovereignweb.site/designs/brief.html): Plain and printable on A4
+
+## Sources
+
+- sgit.ai, home page: https://sgit.ai/ (read 2026-11-20)
+- sgit.ai, what is sgit: https://sgit.ai/docs/what-is-sgit.html (read 2026-11-20)
+- sgit.ai, investors: https://sgit.ai/investors/index.html (read 2026-11-20)
+- sgit.ai, why sgit: https://sgit.ai/why/index.html (read 2026-11-20)
+- sgit.ai, limitations: https://sgit.ai/docs/limitations.html (read 2026-11-20)
+- sgit.ai, llms.txt: https://sgit.ai/llms.txt (read 2026-11-20)
+- sgit.ai, security: https://sgit.ai/security/index.html (read 2026-11-20)
+- sgit.ai, installation: https://sgit.ai/docs/installation.html (read 2026-11-20)
+- sgit.ai, site versions: https://sgit.ai/admin/versions.html (read 2026-11-20)
+- sgit.ai, published vaults: https://sgit.ai/demos/vaults/index.html (read 2026-11-20)
+- SGit Newsroom, llms.txt: https://newsroom.sgit.ai/llms.txt (read 2026-11-20)
+- sgit.ai, updates: https://sgit.ai/updates/index.html (read 2026-11-20)
+- PyPI, sgit-ai release history: https://pypi.org/project/sgit-ai/#history (read 2026-11-20)
+- sgit.ai, about: https://sgit.ai/about/index.html (read 2026-11-20)

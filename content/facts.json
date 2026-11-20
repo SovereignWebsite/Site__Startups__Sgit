@@ -1,0 +1,102 @@
+{
+  "slug": "sgit",
+  "name": "sgit",
+  "mark": "s",
+  "kicker": "Git for encrypted vaults",
+  "domain": "sgit.startups.sovereignweb.site",
+  "url": "https://sgit.ai/",
+  "url_label": "sgit.ai",
+  "repo": "https://github.com/SovereignWebsite/Site__Startups__Sgit",
+  "updated": "2026-11-20",
+  "home": "blueprint",
+  "description": "An independent brochure about sgit, git for encrypted vaults, for humans and AI agents, made from its own public pages.",
+  "headline": "Version control for files the server must never read",
+  "lede": "sgit lets people and AI agents clone, commit, branch and merge folders of files that are encrypted on their own machine before upload. The server holds only ciphertext, and a one-way read key lets anyone open a vault without an account.",
+  "quote": {"q": "Git for encrypted vaults, for humans and AI agents", "who": "The headline on sgit.ai", "s": [1]},
+  "what": [
+    {"t": "sgit is a command-line tool for folders of files that are encrypted with AES-256-GCM on your own machine before they are uploaded. You clone, commit, branch, diff and merge them much as you would with git.", "s": [2]},
+    {"t": "The server stores only ciphertext under opaque IDs. It never sees filenames, file contents or commit messages.", "s": [2]},
+    {"t": "A vault can be handed to someone with a single read key: no account, no hosting and nothing for the reader to install. The same vault opens in a browser through SG/Vault.", "s": [1]},
+    {"t": "The code is free under Apache-2.0. What is sold is the running, maintained hosted service, at sgraph.ai; self-hosting is documented. sgit is marked beta.", "s": [3, 4, 13]}
+  ],
+  "story": [
+    {"t": "sgit starts from one sentence on its own site: \"you have files that need version control and collaboration, and the place they are stored must not be able to read them.\"", "s": [4]},
+    {"t": "The package first appears on PyPI as version 0.8.17 on 20 March 2026. Releases came quickly through the spring, with more than thirty a month in April and May.", "s": [13]},
+    {"t": "In August 2026 the project's own site began, at version 0.1.1 on 11 August, and the first published vaults followed on 16 August: real work shared openly with read keys.", "s": [9, 10]},
+    {"t": "By 13 October 2026 the site listed 54 published vaults and around 4,000 tests, and the SGit Newsroom had moved to its own address, newsroom.sgit.ai. Version 0.27.0 reached PyPI on 28 October 2026.", "s": [10, 1, 9, 13]},
+    {"t": "The site is candid about what it is not. It says it is in \"daily production use by its authors, a small n\", and tells anyone whose files are not sensitive to use git and a private repository instead.", "s": [4]}
+  ],
+  "for_whom": [
+    {"t": "AI agents and the people working with them: agent state that must outlive the context window, shared between agents, with a human reviewing merges.", "s": [1, 4]},
+    {"t": "Professional services such as legal, M&A, audit and security assessment, handling client working documents.", "s": [4]},
+    {"t": "Health and regulated sectors, where a host that provably cannot read the content changes what is allowed.", "s": [4]},
+    {"t": "Not for everyone: if your files are not sensitive, the site says to use git and a private repository.", "s": [4, 5]}
+  ],
+  "how": [
+    {"title": "A folder becomes a vault", "t": "An ordinary folder gains a .sg_vault directory. A commit snapshots the whole folder; there is no staging area.", "s": [2, 6]},
+    {"title": "Encrypted on your machine", "t": "Every commit, tree and blob is encrypted with AES-256-GCM before upload, with keys derived by PBKDF2 at 600,000 iterations.", "s": [2, 7]},
+    {"title": "The server sees ciphertext", "t": "Objects are stored under opaque IDs. The server can see sizes and timing, never names or contents.", "s": [2, 7]},
+    {"title": "One string opens it", "t": "The vault key is address, credential and root of every key. A one-way read key decrypts but cannot write, so it can be published.", "s": [2, 4]},
+    {"title": "Merge, in terminal or browser", "t": "Each machine or agent gets a private branch; shared branches merge three ways. The browser app speaks the same format.", "s": [1, 6]}
+  ],
+  "products": [
+    {"name": "sgit", "short": "sgit CLI", "url": "https://sgit.ai/docs/installation.html", "t": "The command-line tool: pip install sgit-ai. Pure Python, Python 3.11 or newer, two runtime dependencies, Apache-2.0.", "s": [8, 3]},
+    {"name": "SG/Vault", "short": "SG/Vault", "t": "A web app to browse and edit vaults and run their apps in the browser, an independent implementation of the same wire format.", "s": [3]},
+    {"name": "SG/Send", "short": "SG/Send", "t": "The zero-knowledge storage and transfer API both clients speak to, hosted by sgraph.ai or self-hosted.", "s": [3]},
+    {"name": "Published vaults", "short": "Vaults", "url": "https://sgit.ai/demos/vaults/index.html", "t": "A catalogue of vaults with public read keys: 54 when last updated on 13 October 2026.", "s": [10]},
+    {"name": "SGit Newsroom", "short": "Newsroom", "url": "https://newsroom.sgit.ai/", "t": "Articles, a newsletter and a reading meter, at its own address since October 2026.", "s": [11, 9]}
+  ],
+  "timeline": [
+    {"date": "2026-03-20", "label": "First sgit-ai release on PyPI, version 0.8.17.", "s": [13]},
+    {"date": "2026-05-01", "label": "Version 0.11.0; May ends with 36 releases in the month.", "s": [13]},
+    {"date": "2026-08-11", "label": "The sgit.ai site begins, at version 0.1.1.", "s": [9]},
+    {"date": "2026-08-13", "label": "Version 0.15.0, the release the security page cites for public-key signing.", "s": [13, 7]},
+    {"date": "2026-08-16", "label": "The first published vaults, numbers 1 to 3.", "s": [10]},
+    {"date": "2026-10-07", "label": "The SGit Newsroom and newsletter are announced.", "s": [12]},
+    {"date": "2026-10-13", "label": "The newsroom moves to newsroom.sgit.ai; the site, at version 0.7.87, lists 54 vaults.", "s": [9, 10]},
+    {"date": "2026-10-28", "label": "Version 0.27.0, the latest stable release when this page was checked.", "s": [13]}
+  ],
+  "figures": [
+    {"value": "0.27.0", "label": "latest stable release on PyPI", "asof": "2026-10-28", "s": [13]},
+    {"value": "~4,000", "label": "tests, with mutation testing in CI", "asof": "2026-10-13", "s": [1]},
+    {"value": "54", "label": "published vaults with public read keys", "asof": "2026-10-13", "s": [10]},
+    {"value": "600,000", "label": "PBKDF2 iterations deriving each vault's keys", "asof": "2026-10-13", "s": [7]},
+    {"value": "2", "label": "runtime dependencies", "asof": "2026-10-13", "s": [8]}
+  ],
+  "chart": {
+    "title": "Releases on PyPI, by month, 2026",
+    "note": "Counted from the package's own release list on PyPI, read 20 November 2026.",
+    "s": [13],
+    "bars": [
+      {"label": "March", "value": 13}, {"label": "April", "value": 30}, {"label": "May", "value": 36},
+      {"label": "June", "value": 2}, {"label": "July", "value": 0}, {"label": "August", "value": 3},
+      {"label": "September", "value": 0}, {"label": "October", "value": 25}, {"label": "November", "value": 1}
+    ]
+  },
+  "people": [
+    {"name": "Dinis Cruz", "role": "founder of sgit.ai; The Cyber Boardroom Limited is named as the commercial vehicle behind it", "s": [14]}
+  ],
+  "visit": "The site documents everything, including its limits: what sgit does not do yet and when you should use plain git instead.",
+  "newsroom": {
+    "kicker": "Startup profile",
+    "headline": "The git your server cannot read",
+    "standfirst": "sgit encrypts every commit on your own machine, so the host keeps only ciphertext. It is built for AI agents, regulated work and anyone handing sensitive files over."
+  },
+  "brand": {"accent": "#0f766e", "accent_dark": "#5eead4", "soft": "#e3f1ef", "soft_dark": "#102a28"},
+  "sources": [
+    {"id": 1, "title": "sgit.ai, home page", "url": "https://sgit.ai/", "accessed": "2026-11-20"},
+    {"id": 2, "title": "sgit.ai, what is sgit", "url": "https://sgit.ai/docs/what-is-sgit.html", "accessed": "2026-11-20"},
+    {"id": 3, "title": "sgit.ai, investors", "url": "https://sgit.ai/investors/index.html", "accessed": "2026-11-20"},
+    {"id": 4, "title": "sgit.ai, why sgit", "url": "https://sgit.ai/why/index.html", "accessed": "2026-11-20"},
+    {"id": 5, "title": "sgit.ai, limitations", "url": "https://sgit.ai/docs/limitations.html", "accessed": "2026-11-20"},
+    {"id": 6, "title": "sgit.ai, llms.txt", "url": "https://sgit.ai/llms.txt", "accessed": "2026-11-20"},
+    {"id": 7, "title": "sgit.ai, security", "url": "https://sgit.ai/security/index.html", "accessed": "2026-11-20"},
+    {"id": 8, "title": "sgit.ai, installation", "url": "https://sgit.ai/docs/installation.html", "accessed": "2026-11-20"},
+    {"id": 9, "title": "sgit.ai, site versions", "url": "https://sgit.ai/admin/versions.html", "accessed": "2026-11-20"},
+    {"id": 10, "title": "sgit.ai, published vaults", "url": "https://sgit.ai/demos/vaults/index.html", "accessed": "2026-11-20"},
+    {"id": 11, "title": "SGit Newsroom, llms.txt", "url": "https://newsroom.sgit.ai/llms.txt", "accessed": "2026-11-20"},
+    {"id": 12, "title": "sgit.ai, updates", "url": "https://sgit.ai/updates/index.html", "accessed": "2026-11-20"},
+    {"id": 13, "title": "PyPI, sgit-ai release history", "url": "https://pypi.org/project/sgit-ai/#history", "accessed": "2026-11-20"},
+    {"id": 14, "title": "sgit.ai, about", "url": "https://sgit.ai/about/index.html", "accessed": "2026-11-20"}
+  ]
+}
