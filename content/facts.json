@@ -530,10 +530,11 @@
     "caption": "A published vault on sgit.ai (a fictional pentest report): its read key, then the vault's own app open in the page, \"117 files decrypted in the frame\"",
     "phone": "img/real/v-report-phone.webp",
     "phone_w": 780,
-    "phone_h": 1120,
+    "phone_h": 898,
     "phone_taken": "2026-11-23",
     "taken": "2026-11-23",
-    "phone_caption": "A published vault on sgit.ai (a fictional pentest report), its own app open read-only in the page: \"117 files decrypted in the frame\""
+    "phone_caption": "A published vault (a fictional pentest report) on sgit.ai, its own app open read-only; the page says \"117 files decrypted in the frame\"",
+    "phone_label": "A real vault on sgit.ai, opened read-only in its own page"
    }
   ]
  },
