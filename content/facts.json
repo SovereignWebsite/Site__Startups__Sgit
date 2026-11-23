@@ -528,7 +528,7 @@
     "caption": "Report: a penetration test report (fictional) as a vault on sgit.ai",
     "phone": "img/real/v-report-phone.webp",
     "phone_w": 780,
-    "phone_h": 940,
+    "phone_h": 1008,
     "phone_taken": "2026-11-23"
    }
   ]
@@ -796,21 +796,27 @@
     "t": "Plaintext: your files, their names and your commit messages. Every object is encrypted here, with AES-256-GCM, before it is uploaded.",
     "s": [
      2
-    ]
+    ],
+    "icon": "machine",
+    "sample": "plan.md  \"add the plan\""
    },
    {
     "k": "On the server",
     "t": "Ciphertext only, under opaque IDs. It can see sizes and timing, never names or contents.",
     "s": [
      7
-    ]
+    ],
+    "icon": "server",
+    "sample": "obj 9c41e7…  4.1 kB  12:04"
    },
    {
     "k": "With the read key",
     "t": "A reader opens the vault with one string: no account, no hosting, nothing to install.",
     "s": [
      1
-    ]
+    ],
+    "icon": "key",
+    "sample": "one string, read only"
    }
   ],
   "code": {
@@ -824,6 +830,8 @@
    "s": [
     15
    ]
-  }
+  },
+  "flow": true,
+  "flow_note": "The grey samples are illustrations drawn for this page, not real vault data."
  }
 }
