@@ -484,7 +484,8 @@
     "phone": "img/real/vaults-phone.webp",
     "phone_w": 780,
     "phone_h": 940,
-    "phone_taken": "2026-11-23"
+    "phone_taken": "2026-11-23",
+    "taken": "2026-11-23"
    },
    {
     "file": "img/real/why.webp",
@@ -493,7 +494,8 @@
     "phone": "img/real/why-phone.webp",
     "phone_w": 780,
     "phone_h": 940,
-    "phone_taken": "2026-11-23"
+    "phone_taken": "2026-11-23",
+    "taken": "2026-11-23"
    },
    {
     "file": "img/real/v-reference.webp",
@@ -529,7 +531,8 @@
     "phone": "img/real/v-report-phone.webp",
     "phone_w": 780,
     "phone_h": 1008,
-    "phone_taken": "2026-11-23"
+    "phone_taken": "2026-11-23",
+    "taken": "2026-11-23"
    }
   ]
  },
