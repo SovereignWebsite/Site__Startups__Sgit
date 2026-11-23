@@ -483,7 +483,7 @@
     "caption": "The catalogue of published vaults on sgit.ai",
     "phone": "img/real/vaults-phone.webp",
     "phone_w": 780,
-    "phone_h": 940,
+    "phone_h": 882,
     "phone_taken": "2026-11-23",
     "taken": "2026-11-23"
    },
@@ -512,7 +512,7 @@
     "caption": "Application: the agent permission games vault on sgit.ai",
     "phone": "img/real/v-application-phone.webp",
     "phone_w": 780,
-    "phone_h": 940,
+    "phone_h": 1146,
     "phone_taken": "2026-11-23"
    },
    {
@@ -530,7 +530,7 @@
     "caption": "Report: a penetration test report (fictional) as a vault on sgit.ai",
     "phone": "img/real/v-report-phone.webp",
     "phone_w": 780,
-    "phone_h": 1008,
+    "phone_h": 940,
     "phone_taken": "2026-11-23",
     "taken": "2026-11-23"
    }
