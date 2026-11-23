@@ -473,56 +473,63 @@
     "url": "https://sgit.ai/",
     "caption": "The sgit.ai home page: a vault is a unit of work",
     "phone": "img/real/home-phone.webp",
-    "phone_w": 960,
-    "phone_h": 360
+    "phone_w": 780,
+    "phone_h": 940,
+    "phone_taken": "2026-11-23"
    },
    {
     "file": "img/real/vaults.webp",
     "url": "https://sgit.ai/demos/vaults/index.html",
     "caption": "The catalogue of published vaults on sgit.ai",
     "phone": "img/real/vaults-phone.webp",
-    "phone_w": 760,
-    "phone_h": 460
+    "phone_w": 780,
+    "phone_h": 940,
+    "phone_taken": "2026-11-23"
    },
    {
     "file": "img/real/why.webp",
     "url": "https://sgit.ai/why/index.html",
     "caption": "Why does this exist? sgit.ai's own boundary map",
     "phone": "img/real/why-phone.webp",
-    "phone_w": 760,
-    "phone_h": 460
+    "phone_w": 780,
+    "phone_h": 940,
+    "phone_taken": "2026-11-23"
    },
    {
     "file": "img/real/v-reference.webp",
     "url": "https://sgit.ai/demos/vaults/aiuc-1-conformance/index.html",
     "caption": "Reference: the AIUC-1 conformance layer vault on sgit.ai",
     "phone": "img/real/v-reference-phone.webp",
-    "phone_w": 760,
-    "phone_h": 460
+    "phone_w": 780,
+    "phone_h": 940,
+    "phone_taken": "2026-11-23"
    },
    {
     "file": "img/real/v-application.webp",
     "url": "https://sgit.ai/demos/vaults/agent-permission-games/index.html",
     "caption": "Application: the agent permission games vault on sgit.ai",
     "phone": "img/real/v-application-phone.webp",
-    "phone_w": 760,
-    "phone_h": 460
+    "phone_w": 780,
+    "phone_h": 940,
+    "phone_taken": "2026-11-23"
    },
    {
     "file": "img/real/v-presentation.webp",
     "url": "https://sgit.ai/demos/vaults/blackhat-eu-2025/index.html",
     "caption": "Presentation: AI vs. AI, Black Hat EU 2025, as a vault on sgit.ai",
     "phone": "img/real/v-presentation-phone.webp",
-    "phone_w": 760,
-    "phone_h": 460
+    "phone_w": 780,
+    "phone_h": 940,
+    "phone_taken": "2026-11-23"
    },
    {
     "file": "img/real/v-report.webp",
     "url": "https://sgit.ai/demos/vaults/pentest-report/index.html",
     "caption": "Report: a penetration test report (fictional) as a vault on sgit.ai",
     "phone": "img/real/v-report-phone.webp",
-    "phone_w": 760,
-    "phone_h": 460
+    "phone_w": 780,
+    "phone_h": 940,
+    "phone_taken": "2026-11-23"
    }
   ]
  },
