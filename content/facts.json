@@ -841,6 +841,7 @@
    ]
   },
   "flow": true,
-  "flow_note": "The grey samples are illustrations drawn for this page, not real vault data."
+  "flow_note": "The grey samples, and the one moving above the zones, are illustrations drawn for this page, not real vault data.",
+  "flow_anim": true
  }
 }
