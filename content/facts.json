@@ -590,7 +590,7 @@
     "h1_s": [
      1
     ],
-    "sub": "\"Version it like git. Hand it over with a single read key, no account, no hosting, no install for the reader. And the server that stores it cannot read it.\"",
+    "sub": "",
     "hero": "shot",
     "shot": 6,
     "strip_below": [
@@ -601,7 +601,8 @@
     "under_h1": "A vault is a unit of work: data, app, history and sources, shipped as one string",
     "under_h1_s": [
      1
-    ]
+    ],
+    "sub_hidden": "\"Version it like git. Hand it over with a single read key, no account, no hosting, no install for the reader. And the server that stores it cannot read it.\""
    }
   },
   {
