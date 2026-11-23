@@ -586,7 +586,7 @@
     },
     "h1_font": "700 clamp(2.2rem,5.6vw,3.8rem)/1.1 \"Iowan Old Style\",Charter,Georgia,serif",
     "h2_font": "700 clamp(1.4rem,3vw,2rem)/1.2 \"Iowan Old Style\",Charter,Georgia,serif",
-    "h1": "A vault is a unit of work: data, app, history and sources, shipped as one string",
+    "h1": "Git for encrypted vaults, for humans and AI agents",
     "h1_s": [
      1
     ],
@@ -597,7 +597,11 @@
      1,
      2
     ],
-    "strip_title": "More of sgit.ai"
+    "strip_title": "More of sgit.ai",
+    "under_h1": "A vault is a unit of work: data, app, history and sources, shipped as one string",
+    "under_h1_s": [
+     1
+    ]
    }
   },
   {
