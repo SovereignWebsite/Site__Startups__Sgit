@@ -527,12 +527,13 @@
    {
     "file": "img/real/v-report.webp",
     "url": "https://sgit.ai/demos/vaults/pentest-report/index.html",
-    "caption": "Report: a penetration test report (fictional) as a vault on sgit.ai",
+    "caption": "A published vault on sgit.ai (a fictional pentest report): its read key, then the vault's own app open in the page, \"117 files decrypted in the frame\"",
     "phone": "img/real/v-report-phone.webp",
     "phone_w": 780,
     "phone_h": 940,
     "phone_taken": "2026-11-23",
-    "taken": "2026-11-23"
+    "taken": "2026-11-23",
+    "phone_caption": "A published vault on sgit.ai (a fictional pentest report), opened on a phone"
    }
   ]
  },
